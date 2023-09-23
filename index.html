@@ -17,10 +17,10 @@
             <div class="gameboyContent">
                 <div class="contentScreen">
                     <div class="contentScreenLight">
-                        <div></div>
+                        <div class="powerOff" id="lightPower"></div>
                         <p>BATTERY</p>
                     </div>
-                    <div class="contentScreenGreen"></div>
+                    <div class="contentScreenGreen" id="screen"></div>
                 </div>
                 <div class="contentButtons">
                     <div class="gameboyLogo">
@@ -40,11 +40,11 @@
                         </div>
                         <div class="buttonsTopCircles">
                             <div class="buttonsTopCirclesLeft">
-                                <div></div>
+                                <div id="buttonB"></div>
                                 <p>B</p>
                             </div>
                             <div class="buttonsTopCirclesRight">
-                                <div></div>
+                                <div id="buttonA"></div>
                                 <p>A</p>
                             </div>
                         </div>
@@ -55,7 +55,7 @@
                             <p>SELECT</p>
                         </div>
                         <div class="buttonsMidStart">
-                            <div></div>
+                            <div id="start"></div>
                             <p>START</p>
                         </div>
                     </div>
@@ -71,5 +71,7 @@
             </div>
         </div>
     </div>
+
+    <script src="./js/scrypt.js"></script>
 </body>
 </html>

@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("https://www.birdymagazine.com/wp-content/uploads/2023/02/Artbyakhmad.jpg");
+    background-image: url("../images/background.jpg");
     background-size: cover;
 }
 
@@ -78,7 +78,15 @@
     gap: 0.4em;
 }
 
-.contentScreenLight div {
+.powerOff {
+    height: 0.5em;
+    width: 0.5em;
+    background-color: #580000;
+    outline: 0.1em solid #000;
+    border-radius: 50%;
+}
+
+.powerOn {
     height: 0.5em;
     width: 0.5em;
     background-color: #FF0000;
@@ -99,6 +107,12 @@
     width: 80%;
     background-color: #99AD28;
     outline: 0.1em solid #000;
+}
+
+.contentScreenGreen img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .contentButtons {
@@ -156,7 +170,8 @@
     gap: 0.5em;
 }
 
-.buttonsTopCirclesLeft div, .buttonsTopCirclesRight div {
+.buttonsTopCirclesLeft div,
+.buttonsTopCirclesRight div {
     height: 2.5em;
     width: 2.5em;
     border-radius: 50%;
@@ -164,8 +179,15 @@
     outline: 0.1em solid #000;
     box-shadow: 3px 3px 0.5px #000;
 }
+.buttonsTopCirclesLeft div:active,
+.buttonsTopCirclesRight div:active,
+.buttonsTopCirclesLeft div:focus,
+.buttonsTopCirclesRight div:focus {
+    box-shadow: none;
+}
 
-.buttonsTopCirclesLeft p, .buttonsTopCirclesRight p {
+.buttonsTopCirclesLeft p,
+.buttonsTopCirclesRight p {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -180,7 +202,8 @@
     gap: 1em;
 }
 
-.buttonsMidSelect, .buttonsMidStart {
+.buttonsMidSelect,
+.buttonsMidStart {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -188,7 +211,8 @@
     gap: 0.3em;
 }
 
-.buttonsMidSelect div, .buttonsMidStart div {
+.buttonsMidSelect div,
+.buttonsMidStart div {
     height: 0.6em;
     width: 2.5em;
     border-radius: 25%;
@@ -196,8 +220,15 @@
     outline: 0.1em solid #000;
     box-shadow: 2px 2px 1px #000;
 }
+.buttonsMidSelect div:active,
+.buttonsMidStart div:active,
+.buttonsMidSelect div:focus,
+.buttonsMidStart div:focus {
+    box-shadow: none;
+}
 
-.buttonsMidSelect P, .buttonsMidStart P {
+.buttonsMidSelect P,
+.buttonsMidStart P {
     font-size: 0.8em;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
