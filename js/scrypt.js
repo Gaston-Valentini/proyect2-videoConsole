@@ -17,7 +17,7 @@ let images = [image1, image2, image3]
 let imgaesPosition = 0
 // Crea un audio para utilizarlo al iniciar la consola
 let audio = new Audio()
-audio.src = "../audio/street-fighter-intro.mp3"
+audio.src = "./audio/street-fighter-intro.mp3"
 
 // Al hacer click en el botón START...
 start.addEventListener("click", () => {
