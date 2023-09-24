@@ -2,9 +2,10 @@
 let lightPower = document.querySelector("#lightPower")
 let start = document.querySelector("#start")
 let screen = document.querySelector("#screen")
-let image1 = '<img src="../images/gta.webp">'
-let image2 = '<img src="../images/scorpion.jpeg"></img>'
-let image3 = '<img src="../images/kratos.webp"></img>'
+let image1 = '<img src="./images/gta.webp">'
+let image2 = '<img src="./images/scorpion.jpeg"></img>'
+let image3 = '<img src="./images/kratos.webp"></img>'
+let gif = '<img src="./images/nintendoGif.gif"></img>'
 let buttonA = document.querySelector("#buttonA")
 let buttonB = document.querySelector("#buttonB")
 // Rastrea si la consola está encendida
@@ -27,7 +28,7 @@ start.addEventListener("click", () => {
         lightPower.classList.toggle("powerOn")
         lightPower.classList.toggle("powerOff")
         // Ejecuta la animación de encendido
-        screen.innerHTML = '<img src="https://i.gifer.com/XTrC.gif"></img>'
+        screen.innerHTML = gif
         audio.play();
         animationInProgress = true
         // Luego de finalizada la animación muestra la primera imagen
